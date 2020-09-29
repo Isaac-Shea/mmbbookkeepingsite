@@ -1,0 +1,131 @@
+<!-- HOMEPAGE -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        
+        <title>Home | Manage My Bookkeeping</title>
+        <link rel="icon" type="image/png" href="assets/images/mainlogo-notext.png">
+        
+        <!-- JS -->
+        <script src="js/index.js"></script>                
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/global.css">
+        
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+
+        <!-- Nav Bar -->
+        <nav class="nav">
+            <img class="main-logo" src="assets/images/mainlogo-notext.png">
+            <h1>Manage My <span class="secondary">Bookkeeping</span></h1>
+
+            <div class="nav-buttons">
+                <a class="button selected" href="index.html">Home</a>
+                <a class="button" href="about.html">About</a>
+                <a class="button">Contact Us</a>
+                
+                <a href="javascript:void(0);" class="button icon material-icons" onclick="openNav()">menu</a>
+            </div>
+        </nav>
+        
+        <!-- Full-Page Nav -->
+        <div id="fullPageNav" class="full-page-nav">
+        
+            <a href="javascript:void(0)" class="button icon material-icons" onclick="closeNav()">
+                close
+            </a>
+            
+            <div id="navContent" class="nav-content">
+                <a class="button selected" href="about.html">Home</a>
+                <a class="button" href="about.html">About</a>
+                <a class="button">Contact Us</a>
+            </div>
+        
+        </div>
+        
+        <!-- Page Header -->       
+        <header class="header">
+            <div class="header-text">
+                <h1>We'll Look After Your Paperwork</h1>
+                <h3 class="secondary">So You Can Look After Your Business</h3>
+            </div>
+            <div class="header-badges">
+                <img src="assets/images/hubdoc-wide.png" class="badge-wide">
+                <img src="assets/images/basagent-wide.png" class="badge-wide">
+                <img src="assets/images/xero-wide.png" class="badge-wide">
+                
+                <img src="assets/images/hubdoc-square.png" class="badge-small">
+                <img src="assets/images/basagent-square.png" class="badge-small">
+                <img src="assets/images/xero-square.png" class="badge-small">
+            </div>
+        </header>
+        
+        <!-- Page Content -->
+        <div class="page-content">
+            <div class="column-content">
+                
+                <div class="card">
+                    <h2>Administration & Online Services</h2>
+                    <p>
+                        Administration and business management services including social media and marketing. Servicing Brisbane, Logan and Gold Coast, and the rest of Australia online through cloud technology.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <h2>Bookkeeping & BAS Services</h2>
+                    <p>
+                        Data entry, payroll, bank reconciliations, GST, PAYG, Superannuation obligations, TPAR and QLeave Reporting, debt collection, End of Financial Year, and more.
+                    </p>
+                    
+                    <button class="button primary">Book Online</button>
+                </div>
+                
+                <div class="card">
+                    <div id="googleMap" class="google-map"></div>
+                    
+                    <script>
+                        function initMap() {
+                            var location = {lat: -27.678525, lng: 153.1706256};
+                            var map = new google.maps.Map(
+                                document.getElementById("googleMap"), {zoom: 12, center: location});
+                            var marker = new google.maps.Marker({position: location, map: map});
+                        }
+                    </script>
+
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_yMP0L-lRbcpYFofVhx-VjiAJ3RhazcE&callback=initMap"></script>
+                </div>
+            </div>
+        </div>
+    
+        <footer class="footer light">
+            
+            <div class="footer-section footer-left">
+                <img src="assets/images/mainlogo-notext.png">
+                <p><i>© 2020 Shea Management Services</i></p>
+            </div>
+            
+            <div class="footer-section footer-middle">
+                <a class="button social material-icons" href="https://www.facebook.com/managemybookkeeping" target="_blank">
+                    facebook
+                </a>
+            </div>
+            
+            <div class="footer-section footer-right">
+                <p class="monospaced"><i>Developed by Isaac Shea</i></p>
+                <img src="assets/images/isaacshea-light.png">
+            </div>
+            
+        </footer>
+    </body>
+</html>
