@@ -225,7 +225,7 @@ li > img {
 
 /* Header */
 .header {
-    min-height: 350px;
+    min-height: 500px;
     height: 60%;
     
     background: url(../assets/images/background-original.jpeg);
