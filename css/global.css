@@ -242,6 +242,7 @@ li > img {
 }
 
 .header.alt {
+    min-height: 350px;
     height: 40%;
     
     background: url(../assets/images/background-blur.png);
@@ -488,6 +489,7 @@ li > img {
     .card, .column {
         height: auto;
         width: 100%;
+        margin: 10px 0px;
     }
     
     /* Footer */
@@ -530,4 +532,10 @@ li > img {
     .header-text {
         width: 85%;
     }    
+    
+    /* Columns */
+    .column-content {
+        width: 100%;
+        margin: 20px;
+    }
 }
