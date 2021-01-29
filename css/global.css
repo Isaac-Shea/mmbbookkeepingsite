@@ -22,9 +22,10 @@ h3 {
         font-weight: 500;
 }
 
-p {
+p, a {
     text-align: justify;
     font-weight: normal;
+    color: white;
 }
 
 
@@ -54,9 +55,10 @@ li > img {
 
 /* Buttons */
 .button {
-    padding: 10px 20px;
-    width: 120px;
-    margin-left: 10px;
+    padding: 10px 50px;
+    min-width: 120px;
+    margin: 10px;
+    box-sizing: border-box;
     
     color: white;
     font-size: 14px;
@@ -67,14 +69,15 @@ li > img {
     
     background-color: rgba(0, 0, 0, 0.2);
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
+
+    transition-duration: 0.2s;
 }
 .button:hover {
     background-color: rgba(255, 255, 255, 0.2);
     color: #3D3936;
     cursor: pointer;
-    
-    transition-duration: 0.1s;
+
 }
 
 .button.icon {
@@ -107,7 +110,7 @@ li > img {
     color: #3D3936;
     cursor: pointer;
     
-    transition-duration: 0.1s;
+    transition-duration: 0.2s;
 }
 
 .button.social.dark {
@@ -117,7 +120,7 @@ li > img {
     color: white;
     cursor: pointer;
     
-    transition-duration: 0.1s;
+    transition-duration: 0.2s;
 }
 
 .button.selected {
@@ -127,22 +130,20 @@ li > img {
 
 .button.primary {
     background-color: #00D400;
+    transition-duration: 0.2s;
 }
 .button.primary:hover {
     background-color: rgba(255, 255, 255, 0.5);
     color: #3D3936;
-    transition-duration: 0.1s;
+
 }
 
 
 /* Nav */
-.nav {
-    background: url(../assets/images/background-blur.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    color: white;
-    
+.nav {   
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -152,6 +153,13 @@ li > img {
     box-sizing: border-box;
     width: 100%;
     position: fixed;
+
+    transition-duration: 0.2s;
+}
+nav.on-scroll {
+    background: rgba(0, 0, 0, 0.2);
+
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
 }
 
 .nav > .main-logo {
@@ -176,6 +184,10 @@ li > img {
     display: none;
 }
 
+.nav-buttons > .button {
+    margin: 0px;
+    margin-right: 10px;
+}
 
 /* Full-Page Nav */
 .full-page-nav {
@@ -336,6 +348,11 @@ li > img {
     width: 30%;
     margin: 20px;
     box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .column.profile {
@@ -343,6 +360,12 @@ li > img {
     
     align-items: center;
     justify-content: center;
+}
+
+.column > .button {
+    margin: 20px 0px;
+
+    min-width: 250px;
 }
 
 .profile-large {
@@ -358,7 +381,7 @@ li > img {
     padding: 20px;
     margin: 20px;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 5px;
 
     
     background-color: rgba(0, 0, 0, 0.05);
@@ -370,9 +393,17 @@ li > img {
     color: white;
 }
 
+.card.alt > p {
+    color: white;
+}
+
 .card > .button {
     width: 100%;
     margin: 0px;
+}
+
+.card > p {
+    color: black;
 }
 
 .google-map {
