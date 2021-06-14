@@ -1,0 +1,47 @@
+/* -- HEADER -- */
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background: url(../../content/images/brand/background-light.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+    height: 60%;
+}
+.header-container{
+    align-items: flex-start;
+
+    max-width: 800px;
+}
+.header-container > h1 {
+    text-align: left;
+    margin: 10px 0px;
+    font-size: 40px;
+}
+.header-logos {
+    max-width: calc(100% - 200px);
+    flex-wrap: wrap;
+}
+.header-logos > img {
+    padding: 10px;
+
+    height: 100px;
+    width: auto;
+}
+
+/* -- COLUMNS -- */
+.column.column-text {
+    align-items: flex-start;
+}
+.column > h2, .column > p, .column > ul {
+    text-align: left;
+}
+.column > .sep.horizontal {
+    width: 100%;
+    margin: 20px 0px;
+}

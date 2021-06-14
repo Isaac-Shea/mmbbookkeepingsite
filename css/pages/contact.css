@@ -1,0 +1,42 @@
+a {
+    color: var(--tertiary);
+}
+
+/* -- MAIN -- */
+.main {
+    width: 100%;
+    height: 100%;
+
+    background: url(../../content/images/brand/background-light.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -- CARD -- */
+.card.vertical {
+    background-color: var(--primary);
+    width: 200px;
+    height: 100%;
+
+    flex-grow: unset;
+}
+.card.vertical > .card-top > img {
+    border-radius: 0px;
+    width: 100px;
+    margin: 30px;
+    margin-top: 60px;
+}
+.card.vertical  p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card.vertical .container {
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
