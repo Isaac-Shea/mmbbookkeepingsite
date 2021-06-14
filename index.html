@@ -1,148 +1,118 @@
-<!-- HOMEPAGE -->
-
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <!-- Meta -->
-        <meta http-equiv="content-type" content="text/html" charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-        
-        <meta name="description" content="Bookkeeper and BAS Agent serving Brisbane and Gold Coast, QLD | Xero and Hubdoc Certified">
-        <meta name="keywords" content="Administration, Cloud Technology, Xero Certified, Hubdoc Certified">
-        
+        <!-- Browser -->
+        <title>We'll Look After Your Paperwork | Manage My Bookkeeping</title>
+        <link rel="icon" type="image/png" href="content/images/brand/favicon.png">
+
         <!-- Social Media [META] -->
-<<<<<<< Updated upstream
-        <meta property="og:title" content="Manage My Bookkeeping">
-        <meta property="og:description" content="Bookkeeper & BAS Agent serving Brisbane & Gold Coast, QLD">
-        <meta property="og:image" content="https://managemybookkeeping.com.au/assets/images/socialmediapreview.png">
-=======
         <meta property="og:title" content="We'll Look After Your Paperwork | Manage My Bookkeeping">
         <meta property="og:description" content="Since being founded back in 2008, Manage My Bookkeeping has helped many small businesses, including plumbers, electricians, car repairers and more.">
-        <meta property="og:image" content="https://managemybookkeeping.com.au/content/images/photos/mmb-sideon.jpeg">
->>>>>>> Stashed changes
-        <meta property="og:url" content="https://managemybookkeeping.com.au/">
+        <meta property="og:image" content="https://managemybookkeeping.com/content/images/photos/mmb-sideon.jpeg">
+        <meta property="og:url" content="https://managemybookkeeping.com/">
         <meta property="og:locale" content="en_AU">
         <meta property="og:site_name" content="Manage My Bookkeeping">
 
         <meta name="twitter:card" content="summary_large_image">
-        
-        <title>Home | Manage My Bookkeeping</title>
-        <link rel="icon" type="image/png" href="assets/images/mainlogo-notext.png">
-        
-        <!-- JS -->
-        <script src="js/index.js"></script>                
-        
-        <!-- CSS -->
-        <link rel="stylesheet" href="./css/global.css">
-        
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        
-    </head>
-    
-    <body>
 
-        <!-- Nav Bar -->
-        <nav class="nav">
-            <img class="main-logo" src="assets/images/mainlogo-notext.png">
-            <h1>Manage My <span class="secondary">Bookkeeping</span></h1>
+        <!-- JS -->
+        <script src="./js/global.js"></script>
+
+        <!-- CSS -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+        <link rel="stylesheet" href="./css/framework.css">
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/pages/index.css">
+
+        <link rel="stylesheet" href="./css/themes/default.css">
+    </head>
+
+    <body>
+        <!-- NAV -->
+        <nav class="nav responsive" id="nav">
+            <a href="..">
+                <img class="nav-icon" src="./content/images/brand/favicon.png">
+            </a>
 
             <div class="nav-buttons">
-                <a class="button selected" href="index.html">Home</a>
-                <a class="button" href="about.html">About</a>
-                <a class="button" href="mailto:admin@managemybookkeeping.com.au">Contact</a>
-                
-                <a href="javascript:void(0);" class="button icon material-icons" onclick="openNav()">menu</a>
+                <a class="button" href="./about.html">About</a>
+                <a class="button" href="./contact.html">Contact</a>
+            </div>
+            <a class="button icon mobile" onclick="openNav()">
+                <span class="material-icons-round" href="javascript:void(0);" >drag_handle</span>
+            </a>
+        </nav>
+
+        <!-- MOBILE NAV -->
+        <nav class="mobile-nav" id="mobile-nav">
+            <a class="button icon" onclick="closeNav()">
+                <span class="material-icons-round" href="javascript:void(0);">close</span>
+            </a>
+
+            <div class="mobile-nav-buttons responsive" id="mobile-nav-buttons">
+                <a class="button" href="./about.html">About</a>
+                <a class="button" href="./contact.html">Contact</a>
             </div>
         </nav>
-        
-        <!-- Full-Page Nav -->
-        <div id="fullPageNav" class="full-page-nav">
-        
-            <a href="javascript:void(0)" class="button icon material-icons" onclick="closeNav()">
-                close
-            </a>
-            
-            <div id="navContent" class="nav-content">
-                <a class="button selected" href="about.html">Home</a>
-                <a class="button" href="about.html">About</a>
-                <a class="button" href="mailto:admin@managemybookkeeping.com.au">Contact</a>
+
+        <!-- HEADER -->
+        <header class="header responsive">
+            <div class="container vertical header-container">
+                <h1>We'll look after your paperwork</h1>
+                <h3>
+                    So you can look after your business
+                </h3>
             </div>
-        
-        </div>
-        
-        <!-- Page Header -->       
-        <header class="header">
-            <div class="header-text">
-                <h1>We'll Look After Your Paperwork</h1>
-                <h3 class="secondary">So You Can Look After Your Business</h3>
-            </div>
-            <div class="header-badges">
-                <img src="assets/images/hubdoc-wide.png" class="badge-wide">
-                <img src="assets/images/basagent-wide.png" class="badge-wide">
-                <img src="assets/images/xero-wide.png" class="badge-wide">
-                
-                <img src="assets/images/hubdoc-square.png" class="badge-small">
-                <img src="assets/images/basagent-square.png" class="badge-small">
-                <img src="assets/images/xero-square.png" class="badge-small">
+            <div class="container vertical header-logos">
+                <img src="./content/images/hubdoc-wide.png">
+                <img src="./content/images/basagent-wide.png">
+                <img src="./content/images/xero-wide.png">
             </div>
         </header>
-        
-        <!-- Page Content -->
-        <div class="page-content">
-            <div class="column-content">
-                
-                <div class="card">
-                    <h2>Administration & Online Services</h2>
-                    <p>
-                        Administration and business management services including social media and marketing. Servicing Brisbane, Logan and Gold Coast, and the rest of Australia online through cloud technology.
-                    </p>
-                </div>
-                
-                <div class="card">
-                    <h2>Bookkeeping & BAS Services</h2>
-                    <p>
-                        Data entry, payroll, bank reconciliations, GST, PAYG, Superannuation obligations, TPAR and QLeave Reporting, debt collection, End of Financial Year, and more.
-                    </p>
-                </div>
-                
-                <div class="card">
-                    <div id="googleMap" class="google-map"></div>
-                    
-                    <script>
-                        function initMap() {
-                            var location = {lat: -27.678525, lng: 153.1706256};
-                            var map = new google.maps.Map(
-                                document.getElementById("googleMap"), {zoom: 12, center: location});
-                            var marker = new google.maps.Marker({position: location, map: map});
-                        }
-                    </script>
 
-                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_yMP0L-lRbcpYFofVhx-VjiAJ3RhazcE&callback=initMap"></script>
+        <main class="main responsive">
+
+            <!-- INTRODUCTION -->
+            <div class="content-section column-section">
+
+                <h1>What we do</h1>
+
+                <div class="column-container">
+                    <div class="column tri">
+                        <img src="./content/images/pages/administration@2x.png">
+                        <h2>Administration</h2>
+                        <p>
+                            We specialise in all things admin - everything from business to social media to marketing management, we've got you covered.
+                        </p>
+                    </div>
+
+                    <div class="column tri">
+                        <img src="./content/images/pages/bookkeeping@2x.png">
+                        <h2>Bookkeeping & BAS</h2>
+                        <p>
+                            We do data entry, payroll, bank reconciliation, GST, PAYG, superannuation, TPAR and QLeave reporting, debt collection, and more.
+                        </p>
+                    </div>
+
+                    <div class="column tri">
+                        <img src="./content/images/pages/servicebrisbane@2x.png">
+                        <h2>Service Australia</h2>
+                        <p>
+                            We service Brisbane, Logan and the Gold Coast in person, as well as the rest of Australia online using modern cloud technology.
+                        </p>
+                    </div>
                 </div>
+
+                <a class="button secondary alt dark tall" href="./about.html">Sound interesting so far?</a>
             </div>
-        </div>
-    
-        <footer class="footer light">
-            
-            <div class="footer-section footer-left">
-                <img src="assets/images/mainlogo-notext.png">
-                <p><i>© 2020 Shea Management Services</i></p>
-            </div>
-            
-            <div class="footer-section footer-middle">
-                <a class="button social material-icons" href="https://www.facebook.com/managemybookkeeping" target="_blank">
-                    facebook
-                </a>
-            </div>
-            
-            <div class="footer-section footer-right">
-                <a href="https://www.isaacshea.com/" target="_blank" class="site-link-light monospaced"><i>Developed by Isaac Shea</i></a>
-                <img src="assets/images/isaacshea-light.png">
-            </div>
-            
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p>© Manage My Bookkeeping, 2021</p>
         </footer>
     </body>
 </html>

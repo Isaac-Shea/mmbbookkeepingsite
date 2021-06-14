@@ -1,219 +1,144 @@
-<!-- ABOUT PAGE -->
-
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <!-- Meta -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-        
-        <meta name="description" content="Founded back in 2008, we have helped many small businesses around Brisbane & the Gold Coast">
-        <meta name="keywords" content="Administration, Cloud Technology, Xero Certified, Hubdoc Certified">
-        
+        <!-- Browser -->
+        <title>About Us | Manage My Bookkeeping</title>
+        <link rel="icon" type="image/png" href="content/images/brand/favicon.png">
+
         <!-- Social Media [META] -->
-<<<<<<< Updated upstream
-        <meta property="og:title" content="About | Manage My Bookkeeping">
-        <meta property="og:description" content="Founded back in 2008, we have helped many small businesses around Brisbane & the Gold Coast">
-        <meta property="og:image" content="https://managemybookkeeping.com.au/assets/images/socialmediapreview.png">
-=======
         <meta property="og:title" content="About Us | Manage My Bookkeeping">
         <meta property="og:description" content="Since being founded back in 2008, Manage My Bookkeeping has helped many small businesses, including plumbers, electricians, car repairers and more.">
-        <meta property="og:image" content="https://managemybookkeeping.com.au/content/images/photos/mmb-sideon.jpeg">
->>>>>>> Stashed changes
-        <meta property="og:url" content="https://managemybookkeeping.com.au/about.html">
+        <meta property="og:image" content="https://managemybookkeeping.com/content/images/photos/mmb-sideon.jpeg">
+        <meta property="og:url" content="https://managemybookkeeping.com/about.html">
         <meta property="og:locale" content="en_AU">
-        <meta property="og:site_name" content="About | Manage My Bookkeeping">
+        <meta property="og:site_name" content="Manage My Bookkeeping">
 
         <meta name="twitter:card" content="summary_large_image">
-        
-        <title>About | Manage My Bookkeeping</title>
-        <link rel="icon" type="image/png" href="assets/images/mainlogo-notext.png">
-        
-        <!-- JS -->
-        <script src="js/index.js"></script>                
-        
-        <!-- CSS -->
-        <link rel="stylesheet" href="./css/global.css">
-        
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        
-    </head>
-    
-    <body>
 
-        <!-- Nav Bar -->
-        <nav class="nav" id="nav">
-            <img class="main-logo" src="assets/images/mainlogo-notext.png">
-            <h1>Manage My <span class="secondary">Bookkeeping</span></h1>
+        <!-- JS -->
+        <script src="./js/global.js"></script>
+
+        <!-- CSS -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+        <link rel="stylesheet" href="./css/framework.css">
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/pages/about.css">
+
+        <link rel="stylesheet" href="./css/themes/default.css">
+    </head>
+
+    <body>
+        <!-- NAV -->
+        <nav class="nav responsive" id="nav">
+            <a href="..">
+                <img class="nav-icon" src="./content/images/brand/favicon.png">
+            </a>
 
             <div class="nav-buttons">
-                <a class="button" href="index.html">Home</a>
-                <a class="button selected" href="about.html">About</a>
-                <a class="button" href="mailto:admin@managemybookkeeping.com.au">Contact</a>
-                
-                <a href="javascript:void(0);" class="button icon material-icons" onclick="openNav()">menu</a>
+                <a class="button alt" href="./about.html">About</a>
+                <a class="button" href="./contact.html">Contact</a>
+            </div>
+            <a class="button icon mobile" onclick="openNav()">
+                <span class="material-icons-round" href="javascript:void(0);" >drag_handle</span>
+            </a>
+        </nav>
+
+        <!-- MOBILE NAV -->
+        <nav class="mobile-nav" id="mobile-nav">
+            <a class="button icon" onclick="closeNav()">
+                <span class="material-icons-round" href="javascript:void(0);">close</span>
+            </a>
+
+            <div class="mobile-nav-buttons responsive" id="mobile-nav-buttons">
+                <a class="button alt" href="./about.html">About</a>
+                <a class="button" href="./contact.html">Contact</a>
             </div>
         </nav>
-        
-        <!-- Full-Page Nav -->
-        <div id="fullPageNav" class="full-page-nav">
-        
-            <a href="javascript:void(0)" class="button icon material-icons" onclick="closeNav()">
-                close
-            </a>
-            
-            <div id="navContent" class="nav-content">
-                <a class="button" href="index.html">Home</a>
-                <a class="button selected" href="about.html">About</a>
-                <a class="button" href="mailto:admin@managemybookkeeping.com.au">Contact</a>
+
+        <!-- HEADER -->
+        <header class="header responsive">
+            <div class="container vertical header-container">
+                <h1>About Us</h1>
             </div>
-        
-        </div>
-        
-        <!-- Page Header -->       
-        <header class="header alt">
-            <div class="header-text">
-                <h1>ABOUT US</h1>
-            </div>
-            <div class="header-badges alt">
-                <img src="assets/images/hubdoc-square.png" class="badge-alt">
-                <img src="assets/images/basagent-square.png" class="badge-alt">
-                <img src="assets/images/xero-square.png" class="badge-alt">
+            <div class="container horizontal header-logos">
+                <img src="./content/images/hubdoc-square.png">
+                <img src="./content/images/basagent-square.png">
+                <img src="./content/images/xero-square.png">
             </div>
         </header>
-        
-        <!-- Page Content -->
-        <div class="page-content">
-            <div class="column-content">
-                
-                <div class="column">
-                    <p>
-                        Manage My Bookkeeping was founded back in 2008 and has helped many small businesses, including:
-                    </p>
-                    <ul>
-                        <li>Plumbers</li>
-                        <li>Electricians</li>
-                        <li>Roofing Contractors</li>
-                        <li>Transport Operators</li>
-                        <li>Solar Retailers</li>
-                        <li>IT Professionals</li>
-                        <li>Concretors</li>
-                        <li>Car Repairers, and;</li>
-                        <li>Other small businesses</li>
-                    </ul>
-                    <p>
-                        We utilise cloud technology including: 
-                    </p>
-                    <ul>
-                        <li>Online accounting with Xero and Quickbooks to speed up and automate your systems</li>
-                        <li>Online solutions for email including the GSuite</li>
-                        <li>File and data sharing through Dropbox, TeamViewer, etc.</li>
-                    </ul>
+
+        <main class="main responsive">
+
+            <!-- INTRODUCTION -->
+            <div class="content-section column-section">
+                <div class="column-container">
+                    <div class="column bi">
+                        <img src="./content/images/photos/mmb-sideon.jpeg">
+                    </div>
+                    <div class="column bi column-text">
+                        <p>
+                            Since being founded back in 2008, Manage My Bookkeeping has helped many small businesses, including plumbers, electricians, car repairers and more.
+                            <br> <br>
+                            We utilise cloud technologies like Xero, the G-Suite and Dropbox to speed up your  business' efficiency, so you can do more in less time.   
+                        </p>
+                        <span class="sep alt horizontal"></span>
+                        <p>
+                            We pride ourselves on being legislation compliant and competent, including:
+                        </p>
+                        <ul>
+                            <li>Tax Practitioners Board as a registered BAS Agent</li>
+                            <li>ATO BAS Agent portal for secure online lodgement</li>
+                            <li>Xero Silver Certified Advisors</li>
+                            <li>Quickbooks Certified Advisors</li>
+                            <li>Hubdoc Certified Advanced Partner</li>
+                            <li>Up-to-date insurance</li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <div class="column">
-                    <p>
-                        We provide administration and bookkeeping services for your business. 
-                        <br>
-                        We keep everything simple and easy for you whilst still complying with all relevant legislation.
-                        <br>
-                        We are constantly embracing new technologies to save you both time and money.
-                        <br>
-                        We work with you, and can tailor a solution from helping out with administration and bookkeeping work, to running a complete virtual office.
-                        <br>
-                        Let us help lower your stress levels - we can get you sorted to save you time, keep you compliant, keep you on top of your bills, and keep your customers paying you!
-                    </p>
-                </div>
-                
-                <div class="card alt">
-                    <p>We pride ourselves on being compliant, including:</p>
-                    <ul>
-                        <li>Tax Pracitioners Board as a registered BAS Agent</li>
-                        <li>ATO BAS Agent portal for secure online lodgement</li>
-                        <li>Xero Silver Certified Advisors</li>
-                        <li>Quickbooks Certified Advisors</li>
-                        <li>Hubdoc Certified Advanced Partner</li>
-                        <li>Up-to-date Insurance</li>
-                    </ul>
-                </div>
-                
             </div>
-        </div>
-        
-        <div class="page-content alt">
-            <div class="column-content">
-                
-                <div class="column">
-                    <h1>Kylie Shea</h1>
-                    <p>
-                        I began working initially with a family-owned company who needed help managing the administration side of their fast-growing business.  Although brought on to look after "the books" this quickly led me to find other gaps missing, and ways to help.  My services grew to include emails, phone calls, administration, banking help, and generally running their business on a daily basis so they could concentrate on sales and building bigger.
-                        <br> <br>
-                        Now I thrive on helping small businesses to grow - helping business owners to build their business by relieving them of the paperwork, and help them to set up systems and processes specifically for their business, and to let them get back to what they do best.
-                        <br> <br>
-                        I am the first to admit my OCD-like traits, and my need for organisation with t's crossed and i's dotted.  Just ask my husband and kids!  I love putting these skills to use - there's only so much I can use my Dymo labeller on at my place.  And now with the huge advances in technology I have ways to organise your business online to make finding that document or processing that purchase much easier.
-                    </p>
-                    <a class="button primary" href="mailto:admin@managemybookkeeping.com.au">Email Me</a>
-                    <p>
-                        <b>Email:</b> <a href="mailto:admin@managemybookkeeping.com.au"><i>admin@managemybookkeeping.com.au</i></a>
-                        <br>
-                        <br>
-                        <b>Phone:</b> <i>0438 735 650</i>
-                    </p>
+
+            <span class="sep alt horizontal"></span>
+
+            <!-- KYLIE SHEA -->
+            <div class="content-section column-section">
+                <div class="column-container">
+                    <div class="column bi column-text">
+                        <h2>Kylie Shea</h2>
+                        <p>
+                            I began working initially with a family-owned company who needed help managing the administration side of their fast-growing business. Although I was brought on to look after 'the books', this quickly led me to find other gaps missing and ways to help. My services grew to include sending emails, making phone calls, administration, banking help and generally running their business on a daily basis so they could concentrate on sales and building bigger.
+                            <br> <br>
+                            Now I thrive on helping small businesses to grow - helping business owners build their business by relieving them of the paperwork and help them to setup systems and processes specifically for their business and to let them get back to what they do best. 
+                        </p>
+                        <a class="button secondary alt dark large" href="./contact.html">Contact Me</a>
+                        <p>
+                            <b>Email:</b> <a href="mailto:kylie@managemybookkeeping.com">kylie@managemybookkeeping.com</a> <br>
+                            <b>Phone:</b> 0438 735 650
+                        </p>
+                    </div>
+                    <div class="card vertical">
+                        <div class="card-top" style="background-image: url(./content/images/pages/kylieshea-card-background.png)">
+                            <img src="./content/images/pages/kylieshea-avatar.png">
+                        </div>
+                        <div class="card-bottom">
+                            <ul>
+                                <li>Registered BAS Agent #25185100</li>
+                                <li>Certificate IV in Financial Services - Accounting</li>
+                                <li>Xero Silver Certified Advisor</li>
+                                <li>Quickbooks Certified Advisors</li>
+                                <li>Hubdoc Certified Advanced Partner</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="column">
-                    <ul class="alt">
-                        <li>
-                            <img src="/assets/images/checkmark.png">
-                            Registered BAS Agent #25185100
-                        </li>
-                        <li>
-                            <img src="/assets/images/checkmark.png">
-                            Certificate IV in Financial Services - Accounting
-                        </li>
-                        <li>
-                            <img src="/assets/images/checkmark.png">
-                            Xero Silver Certified Advisor
-                        </li>
-                        <li>
-                            <img src="/assets/images/checkmark.png">
-                            Quickbooks Certified ProAdvisor
-                        </li>
-                        <li>
-                            <img src="/assets/images/checkmark.png">
-                            Hubdoc Certified Advanced Partner
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="column profile">
-                    <img class="profile-large" src="assets/images/kylieshea-avatar.png">
-                </div>
-                
             </div>
-        </div>
-    
-        <footer class="footer dark">
-            
-            <div class="footer-section footer-left">
-                <img src="assets/images/mainlogo-notext.png">
-                <p><i>© 2020 Shea Management Services</i></p>
-            </div>
-            
-            <div class="footer-section footer-middle">
-                <a class="button social dark material-icons" href="https://www.facebook.com/managemybookkeeping" target="_blank">
-                    facebook
-                </a>
-            </div>
-            
-            <div class="footer-section footer-right">
-                <a href="https://www.isaacshea.com/" target="_blank" class="site-link-dark monospaced"><i>Developed by Isaac Shea</i></a>
-                <img src="assets/images/isaacshea-dark.png">
-            </div>
-            
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p>© Manage My Bookkeeping, 2021</p>
         </footer>
     </body>
 </html>
